@@ -1,0 +1,8 @@
+.env
+public/.env
+node_modules/
+public/node_modules/
+vendor/
+public/vendor/
+*.log
+public/*.log
