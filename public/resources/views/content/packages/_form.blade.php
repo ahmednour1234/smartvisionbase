@@ -29,6 +29,7 @@
     @error('title_en') <div class="invalid-feedback">{{ $message }}</div> @enderror
   </div>
 
+  {{--
   <!--<div class="col-md-6">-->
   <!--  <label class="form-label">{{ __('package.price') }}</label>-->
   <!--  <input type="number" step="0.01" name="price" class="form-control @error('price') is-invalid @enderror"-->
@@ -42,6 +43,7 @@
   <!--         value="{{ old('price_discount', $isEdit ? $package->price_discount : '') }}">-->
   <!--  @error('price_discount') <div class="invalid-feedback">{{ $message }}</div> @enderror-->
   <!--</div>-->
+  --}}
 
   <div class="col-md-6">
     <label class="form-label">{{ __('package.sort') }}</label>

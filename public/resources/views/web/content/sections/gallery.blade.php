@@ -43,6 +43,7 @@
 </section>
 
 <!-- Start Stats modification. -->
+{{--
 <!--@php-->
 <!--$stats = $stats ?? [-->
 <!--  ['label' => __('Attendance'), 'value' => 30000, 'suffix' => '+'],-->
@@ -71,6 +72,7 @@
 <!--      @endforeach-->
 <!--    </div>-->
 <!--</section>-->
+--}}
 
 <style>
 /* Past Events Gallery Styles */
