@@ -1,0 +1,21 @@
+{
+  "_readme": [
+    "THIS IS A PLACEHOLDER LOCK FILE.",
+    "The release package you received is an overlay and does not ship with resolved Composer dependencies.",
+    "To generate the real lock file (with exact versions), run: composer update (or composer install after generating a proper lock) in your target Laravel project root.",
+    "The required packages are declared in composer.json."
+  ],
+  "content-hash": "",
+  "packages": [],
+  "packages-dev": [],
+  "aliases": [],
+  "minimum-stability": "stable",
+  "stability-flags": {},
+  "prefer-stable": true,
+  "prefer-lowest": false,
+  "platform": {
+    "php": "^8.2"
+  },
+  "platform-dev": {},
+  "plugin-api-version": "2.6.0"
+}

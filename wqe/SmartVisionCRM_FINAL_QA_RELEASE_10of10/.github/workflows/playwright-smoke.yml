@@ -1,0 +1,36 @@
+name: Playwright Smoke (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: 'Staging base URL (e.g., https://staging.example.com)'
+        required: true
+        type: string
+
+jobs:
+  playwright-smoke:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: tools/e2e/package.json
+
+      - name: Install deps
+        working-directory: tools/e2e
+        run: |
+          npm ci || npm install
+          npm run install:browsers
+
+      - name: Run smoke tests
+        working-directory: tools/e2e
+        env:
+          BASE_URL: ${{ inputs.base_url }}
+        run: npm test

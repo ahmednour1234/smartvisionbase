@@ -1,0 +1,33 @@
+name: k6 smoke (staging)
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: 'Staging base URL (e.g., https://staging.example.com)'
+        required: true
+      vus:
+        description: 'Virtual users'
+        required: false
+        default: '10'
+      duration:
+        description: 'Test duration'
+        required: false
+        default: '30s'
+
+jobs:
+  k6:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run k6 (requires repo secret K6_TOKEN)
+        uses: grafana/k6-action@v0.3.1
+        env:
+          BASE_URL: ${{ inputs.base_url }}
+          VUS: ${{ inputs.vus }}
+          DURATION: ${{ inputs.duration }}
+          TOKEN: ${{ secrets.K6_TOKEN }}
+        with:
+          filename: tools/k6/leads_list_search.js

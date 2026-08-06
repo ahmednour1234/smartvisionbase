@@ -1,0 +1,32 @@
+{
+  "name": "smartvision/crm-overlay",
+  "description": "Smart Vision CRM backend overlay (Laravel + Filament) - package manifest for dependency tracking.",
+  "type": "project",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^11.0",
+    "laravel/sanctum": "^4.0",
+    "filament/filament": "^3.0",
+    "spatie/laravel-permission": "^6.0"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.23",
+    "laravel/pint": "^1.0",
+    "mockery/mockery": "^1.6",
+    "nunomaduro/collision": "^8.0",
+    "phpunit/phpunit": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\\\": "backend/overlay/app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\\\": "backend/overlay/tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
