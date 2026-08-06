@@ -1,0 +1,23 @@
+# Smart Vision CRM V3
+Options -Indexes
+
+<Files "config.php">
+  Require all denied
+</Files>
+
+<Files "schema.sql">
+  Require all denied
+</Files>
+
+<Files "seed_countries.sql">
+  Require all denied
+</Files>
+
+<Files "README.md">
+  Require all denied
+</Files>
+
+# After installation, delete install.php. If you can't, block it:
+# <Files "install.php">
+#   Require all denied
+# </Files>

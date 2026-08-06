@@ -1,0 +1,78 @@
+:root{
+  --sv-navy:#0b2a4a;
+  --sv-navy-2:#08355f;
+  --sv-gold:#f3b31c;
+  --sv-red:#c82333;
+  --sv-bg:#f4f6f9;
+  --sv-card:#ffffff;
+  --sv-border:#e6e9ef;
+  --sv-text:#111827;
+  --sv-muted:#6b7280;
+}
+
+html,body{height:100%;}
+body{
+  background:var(--sv-bg);
+  color:var(--sv-text);
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial,"Noto Sans","Liberation Sans",sans-serif;
+}
+
+/* Topbar */
+.sv-topbar{
+  background: linear-gradient(90deg, var(--sv-navy) 0%, var(--sv-navy-2) 65%, #062743 100%);
+  color:#fff;
+  border-bottom:4px solid var(--sv-gold);
+}
+.sv-brandwrap{min-width:260px;}
+.sv-logo{height:34px; width:auto; display:block; filter: drop-shadow(0 1px 0 rgba(0,0,0,.2));}
+.sv-brandtext{font-weight:700; font-size:18px; letter-spacing:.2px;}
+.sv-sub{font-size:12px;color:rgba(255,255,255,.82);}
+.sv-nav a{color:rgba(255,255,255,.9); text-decoration:none; padding:.35rem .6rem; border-radius:.5rem;}
+.sv-nav a:hover{background:rgba(255,255,255,.10); color:#fff;}
+.sv-nav a.active{background:rgba(243,179,28,.18); color:#fff; border:1px solid rgba(243,179,28,.35);}
+
+/* Cards */
+.card, .sv-card{
+  border:1px solid var(--sv-border);
+  border-radius:14px;
+  background:var(--sv-card);
+  box-shadow: 0 8px 22px rgba(17,24,39,.06);
+}
+.card-header, .sv-card-header{background:rgba(11,42,74,.04); border-bottom:1px solid var(--sv-border);}
+
+/* Buttons */
+.btn-primary{
+  background:linear-gradient(180deg, #175aa0 0%, #0f4c86 100%);
+  border-color:#0f4c86;
+}
+.btn-primary:hover{filter:brightness(.98);}
+.btn-outline-primary{border-color:#0f4c86; color:#0f4c86;}
+.btn-outline-primary:hover{background:#0f4c86; border-color:#0f4c86;}
+.badge.bg-danger{background:var(--sv-red) !important;}
+
+/* Inputs */
+.form-control, .form-select{
+  border-radius:12px;
+  border-color:#d7dce6;
+}
+.form-control:focus, .form-select:focus{border-color:#4b83c6; box-shadow:0 0 0 .2rem rgba(23,90,160,.15);}
+
+/* Tables */
+.table thead th{color:#374151; font-weight:700;}
+.table td, .table th{vertical-align:middle;}
+
+/* Mobile UX tweaks */
+@media (max-width: 768px){
+  .sv-topbar .container-fluid{flex-direction:column; align-items:stretch; gap:.5rem;}
+  .sv-brandwrap{width:100%; justify-content:space-between;}
+  .sv-nav{width:100%; display:flex; gap:.25rem; justify-content:space-between; flex-wrap:wrap;}
+  .sv-nav a{flex:1 1 auto; text-align:center;}
+  .btn{width:100%;}
+  .table{font-size:14px;}
+  .table-responsive{border-radius:14px;}
+}
+
+/* WhatsApp mini button */
+.sv-wa-btn{display:inline-flex;align-items:center;gap:.35rem;}
+.sv-wa-btn svg{width:16px;height:16px;}
+
