@@ -1,0 +1,257 @@
+{
+  "menu": [
+    {
+      "url": "/dashboard",
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "dashboard-analytics"
+    },
+        {
+      "url": "/dashboard/qrcodes",
+      "name": "QRCodes",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "QRCodes"
+    },
+    
+       {
+      "url": "/dashboard/pdfs",
+      "name": "PDFS",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "PDFS"
+    },
+     {
+      "name": "Events",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "app-access",
+      "submenu": [
+        {
+      "url": "/showevents/edit/1",
+      "name": "Events",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Events"
+    },
+ {
+      "url": "/admin/event_schedules",
+      "name": "Schedule",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Schedule "
+    }
+      ]
+    },
+
+ {
+      "name": "Sponsors",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "app-access",
+      "submenu": [
+        {
+      "url": "/admin/sponsor_categories",
+      "name": "Sponsors Category",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Sponsors Category"
+    },
+   {
+      "url": "/admin/sponsors",
+      "name": "Sponsors",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Sponsors "
+    }
+  ]
+    },
+
+
+    {
+      "name": "Multimedia",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "app-access",
+      "submenu": [
+ {
+      "url": "/admin/multimedia-categories",
+      "name": "Multimedia Category",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Multimedia Category "
+    },
+     {
+      "url": "/admin/multi-medias",
+      "name": "Multimedia",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Multimedia"
+    }
+]
+    },
+       {
+      "url": "/admin/speakers",
+      "name": "Speakers",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Speakers"
+    }, {
+      "url": "/admin/packages",
+      "name": "Packages",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Packages"
+    },
+     {
+      "url": "/admin/blogs",
+      "name": "Blogs",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Blogs"
+    },
+      {
+      "url": "/dashboard/leads",
+      "name": "Leads",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Leads"
+    },
+      {
+      "url": "/admin/forms",
+      "name": "Forms",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Forms"
+    },
+              {
+      "url": "/qrcodes/attendees",
+      "name": "Attendances",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Attendances"
+    },
+    {
+      "url": "/clients",
+      "name": "Registrations",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Clients"
+    },
+      {
+      "url": "/becomesponosrs",
+      "name": "Become Sponsor",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Clients"
+    },
+    {
+      "url": "dashboard/ads",
+      "name": "Ads",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Ads"
+    },
+    {
+      "url": "dashboard/galleries",
+      "name": "Galleries",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Galleries"
+    },
+    {
+      "url": "/dashboard/seos",
+      "name": "SEO",
+      "icon": "menu-icon tf-icons ti ti-search",
+      "slug": "SEO"
+    },
+      {
+      "url": "/dashboard/pixels",
+      "name": "Pixels",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Pixels"
+    },
+    {
+      "name": "Home Pages",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "app-access",
+      "submenu": [
+
+  {
+    "url": "/dashboard/home_sections/1/edit",
+    "name": "Home Sliders",
+    "icon": "menu-icon tf-icons ti ti-settings",
+    "slug": "home_sections"
+  },
+  {
+    "url": "/dashboard/home_sections/2/edit",
+    "name": "Home Promo",
+    "icon": "menu-icon tf-icons ti ti-settings",
+    "slug": "home_sections"
+  },
+  {
+    "url": "/dashboard/home_sections/3/edit",
+    "name": "Home About_us",
+    "icon": "menu-icon tf-icons ti ti-settings",
+    "slug": "home_sections"
+  },
+  {
+    "url": "/dashboard/home_sections/4/edit",
+    "name": "Home Speakers",
+    "icon": "menu-icon tf-icons ti ti-settings",
+    "slug": "home_sections"
+  },
+  {
+    "url": "/dashboard/home_sections/5/edit",
+    "name": "Home Event_schedule",
+    "icon": "menu-icon tf-icons ti ti-settings",
+    "slug": "home_sections"
+  },
+  {
+    "url": "/dashboard/home_sections/6/edit",
+    "name": "Home Event_album",
+    "icon": "menu-icon tf-icons ti ti-settings",
+    "slug": "home_sections"
+  },
+  {
+    "url": "/dashboard/home_sections/7/edit",
+    "name": "Home Sponsors",
+    "icon": "menu-icon tf-icons ti ti-settings",
+    "slug": "home_sections"
+  },
+  {
+    "url": "/dashboard/home_sections/8/edit",
+    "name": "Home Blogs",
+    "icon": "menu-icon tf-icons ti ti-settings",
+    "slug": "home_sections"
+  },
+    {
+    "url": "/dashboard/home_sections/9/edit",
+    "name": "Promo 2",
+    "icon": "menu-icon tf-icons ti ti-settings",
+    "slug": "Promo2"
+  },
+    {
+    "url": "/dashboard/home_sections/10/edit",
+    "name": "Register",
+    "icon": "menu-icon tf-icons ti ti-settings",
+    "slug": "Register"
+  },
+    {
+    "url": "/dashboard/home_sections/11/edit",
+    "name": "Become Sponsors",
+    "icon": "menu-icon tf-icons ti ti-settings",
+    "slug": "Become Sponsors"
+  }
+      ]
+    },
+    {
+      "name": "Settings",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "settings",
+      "submenu": [
+        {
+          "url": "/setting",
+          "name": "App setting",
+          "slug": "app_setting"
+        }
+      ]
+    },
+    {
+      "name": "Roles & Permissions",
+      "icon": "menu-icon tf-icons ti ti-user",
+      "slug": "app-access",
+      "submenu": [
+        {
+          "url": "/roles",
+          "name": "Roles",
+          "slug": "app-access-roles"
+        },
+        {
+          "url": "/users/dashboard",
+          "name": "List",
+          "slug": "app-user-list"
+        }
+      ]
+    }
+  ]
+}
