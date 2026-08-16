@@ -1,0 +1,42 @@
+<?php
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class SpeakerRequest extends FormRequest
+{
+    public function authorize(): bool
+    {
+        return true;
+    }
+
+    public function rules(): array
+    {
+        return [
+            'name_ar' => 'required|string|max:255',
+            'name_en' => 'required|string|max:255',
+            'title_ar' => 'nullable|string|max:255',
+            'title_en' => 'nullable|string|max:255',
+            'company_name_ar' => 'nullable|string|max:255',
+            'company_name_en' => 'nullable|string|max:255',
+            'linkedin' => 'nullable|url',
+                        'facebook' => 'nullable|url',
+
+            'tiktok' => 'nullable|url',
+            'youtube' => 'nullable|url',
+
+            'social_links' => 'nullable|string',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png',
+            'type'=>'nullable',
+            'number_of_followers'=>'nullable',
+            'instgram'=>'nullable',
+            'orders'=>'nullable',
+            'country_code'=>'nullable',
+            'email'=>'nullable',
+            'password'=>'nullable',
+            'vip'=>'nullable',
+            'followers_ticktock'=>'nullable',
+            'section'=>'nullable'
+        ];
+    }
+}

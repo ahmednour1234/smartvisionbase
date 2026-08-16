@@ -1,0 +1,1 @@
+<?php /**PATH /home/u552947370/domains/affiliatesummitglobal.com/public_html/resources/views/_partials/macros.blade.php ENDPATH**/ ?>
